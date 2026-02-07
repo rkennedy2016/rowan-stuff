@@ -3,52 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rowan Kennedy's Social Links</title>
+    <title>Rowan Kennedy</title>
     <style>
         body {
+            background: linear-gradient(to right, #00c6ff, #0072ff);
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            transition: background-color 0.5s, color 0.5s;
-        }
-        .dark-mode {
-            background-color: #121212;
             color: white;
-        }
-        .light-mode {
-            background-color: #ffffff;
-            color: black;
-        }
-        .container {
-            max-width: 600px;
-            margin: auto;
-            padding: 20px;
             text-align: center;
+            padding: 50px;
         }
-        button {
+        .social-links {
             margin-top: 20px;
-            padding: 10px 15px;
-            cursor: pointer;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .social-icons a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+        }
+        .social-icons a:hover {
+            opacity: 0.7;
         }
     </style>
 </head>
-<body class="light-mode">
-    <div class="container">
-        <h1>Rowan Kennedy's Social Links</h1>
-        <ul>
-            <li><a href="https://www.youtube.com/@gamingwithcoolkids-j3f">YouTube</a></li>
-            <li><a href="mailto:rowan_kennedy1@outlook.com">Outlook</a></li>
-            <li><a href="https://developers.google.com/profile/u/105389548983384881716">Google Developer Profile</a></li>
-            <li><a href="https://github.com/rkennedy2016">GitHub</a></li>
-        </ul>
-        <button onclick="toggleMode()">Toggle Dark/Light Mode</button>
+<body>
+    <h1>Welcome to Rowan Kennedy's Page</h1>
+    <p>Connect with me on social media:</p>
+    <div class="social-links">
+        <div class="social-icons">
+            <a href="https://twitter.com/yourprofile" target="_blank">🐦</a>
+            <a href="https://linkedin.com/in/yourprofile" target="_blank">🔗</a>
+            <a href="https://github.com/yourprofile" target="_blank">🧑‍💻</a>
+            <a href="https://instagram.com/yourprofile" target="_blank">📸</a>
+        </div>
     </div>
-    <script>
-        function toggleMode() {
-            const body = document.body;
-            body.classList.toggle('dark-mode');
-            body.classList.toggle('light-mode');
-        }
-    </script>
 </body>
 </html>
